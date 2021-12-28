@@ -1,0 +1,157 @@
+.products {
+  padding: 112px 80px;
+}
+
+.products__title-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 48px;
+}
+
+.products__title {
+  font-size: 48px;
+  line-height: 56px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+
+  span {
+    color: $gold;
+  }
+}
+
+.products__catalog-link {
+  text-decoration: none;
+  color: $dark;
+  display: flex;
+  align-items: center;
+
+  &::after {
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-image: url("../images/icons/arrow_icon.svg");
+    display: block;
+    margin-left: 8px;
+  }
+}
+
+.products__card {
+  width: 256px;
+  position: relative;
+}
+
+.products__link {
+  display: block;
+  text-decoration: none;
+  background-color: $background-grey;
+  border-radius: 8px;
+
+  &:hover {
+    border: 1px solid rgba($dark, 0.4);
+
+    .products__description {
+      padding: 24px 23px 23px 23px;
+    }
+
+    .product__image {
+      width: 254px;
+      height: 255px;
+    }
+  }
+}
+
+.product__image {
+  width: 256px;
+  height: 256px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 12px solid $brown;
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+.products__promo {
+  font-size: 14px;
+  line-height: 28px;
+  color: $white;
+  background-color: $pink;
+  padding: 0 12px;
+  border-radius: 14px;
+  position: absolute;
+  top: 24px;
+  left: 24px;
+}
+
+.products__wishlist-button {
+  border: none;
+  background: transparent;
+  padding: 0;
+  position: absolute;
+  top: 29px;
+  right: 25px;
+
+  svg {
+    fill: $light;
+  }
+
+  &:hover {
+    svg {
+      fill: rgba($dark, 0.4);
+    }
+  }
+
+  &:active {
+    svg {
+      fill: $gold;
+    }
+  }
+}
+
+.products__description {
+  padding: 24px;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.products__name {
+  font-family: "PF Regal Display Pro", "Times New Roman", serif;
+  font-style: italic;
+  font-size: 18px;
+  color: $dark;
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.products__type {
+  color: rgba($dark, 0.8);
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.products__size {
+  color: rgba($dark, 0.8);
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.products__price-container {
+  font-family: "PF Regal Display Pro", "Times New Roman", serif;
+  font-style: italic;
+  font-size: 18px;
+}
+
+.products__discount {
+  color: $dark;
+  margin-right: 8px;
+}
+
+.products__price {
+  color: rgba($dark, 0.4);
+  text-decoration: line-through;
+}

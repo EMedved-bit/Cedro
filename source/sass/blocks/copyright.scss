@@ -1,0 +1,47 @@
+.copyright {
+  padding: 32px 0;
+  border-bottom: 1px solid rgba($white, 0.16);
+}
+
+.copyright__text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 18px;
+  color: $white;
+  opacity: 0.4;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    opacity: 0.72;
+  }
+}
+
+.copyright__logo {
+  margin-left: 8px;
+  opacity: 0.4;
+}
+
+.copyright-link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+
+  &:hover,
+  &:focus {
+    .copyright__text,
+    .copyright__logo {
+      cursor: pointer;
+      opacity: 0.72;
+    }
+  }
+}
+
+.copyright__info {
+  padding: 32px 80px 0;
+  margin: 0;
+  font-size: 14px;
+  line-height: 18px;
+  color: $white;
+  opacity: 0.4;
+}

@@ -1,0 +1,51 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: none;
+  overflow: hidden;
+  white-space: nowrap;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(100%);
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.main-title {
+  margin: 0;
+  font-size: 80px;
+  line-height: 80px;
+  text-transform: uppercase;
+}
+
+.main-button {
+  padding: 0;
+  border: none;
+  width: 230px;
+  height: 56px;
+  background-color: $dark;
+  font: inherit;
+  color: $white;
+
+  &:hover,
+  &:focus,
+  &:active {
+    cursor: pointer;
+    background-color: $gold;
+  }
+}
+
+.section-title {
+  margin: 0;
+  font-size: 24px;
+
+  &--white {
+    color: $white;
+  }
+}

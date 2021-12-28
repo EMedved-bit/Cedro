@@ -1,0 +1,34 @@
+.profile-sidebar {
+  width: calc(50% - 368px);
+  order: 0;
+  border-bottom: 1px solid $border-grey;
+}
+
+.profile-sidebar__list {
+  list-style: none;
+  padding: 112px 32px 0 0;
+  width: 192px;
+  margin: 0;
+  margin-left: auto;
+}
+
+.profile-sidebar__link {
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $dark;
+
+  &:hover,
+  &:focus,
+  &:active {
+    cursor: pointer;
+    color: $gold;
+  }
+}
+
+.profile-sidebar__item {
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}

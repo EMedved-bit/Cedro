@@ -1,0 +1,62 @@
+.menu__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: calc(100% / 3);
+}
+
+.menu__list-title {
+  margin-bottom: 24px;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    color: $gold;
+  }
+}
+
+.menu__item {
+  margin-bottom: 16px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.menu__contacts-icon {
+  fill: $white;
+  margin-right: 7px;
+  margin-top: 5px;
+}
+
+.menu__link {
+  text-decoration: none;
+  color: rgba($white, 0.8);
+  display: inline-flex;
+
+  &:hover,
+  &:focus,
+  &:active {
+    cursor: pointer;
+    opacity: 0.56;
+  }
+
+  &--contacts {
+    &:hover,
+    &:focus,
+    &:active {
+      cursor: pointer;
+      color: $gold;
+      opacity: 1;
+
+      svg {
+        fill: $gold;
+      }
+    }
+  }
+}
+
+.menu__text-wrapper {
+  display: flex;
+  color: rgba($white, 0.8);
+}

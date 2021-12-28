@@ -1,0 +1,39 @@
+.socials {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.socials__item {
+  margin-right: 8px;
+}
+
+.socials__link {
+  display: flex;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: rgba($white, 0.08);
+  border: 1px solid rgba($white, 0.16);
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: $gold;
+  }
+
+  &--vk {
+    background-image: url("../images/icons/vk_icon.svg");
+  }
+
+  &--facebook {
+    background-image: url("../images/icons/facebook_icon.svg");
+  }
+
+  &--instagram {
+    background-image: url("../images/icons/instagram_icon.svg");
+  }
+}

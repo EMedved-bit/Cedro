@@ -1,0 +1,106 @@
+.page-header {
+  width: 100%;
+  min-height: 64px;
+  border-bottom: 1px solid $light;
+}
+
+.page-header__wrapper {
+  height: 100%;
+  padding: 0 32px;
+  max-width: 1280px;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.page-header__logo {
+  &:hover,
+  &:focus,
+  &:active {
+    cursor: pointer;
+  }
+}
+
+.page-header__user-menu-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.page-header__item {
+  margin: 0 4px;
+
+  &:first-child {
+    margin-right: 32px;
+  }
+
+  a {
+    text-decoration: none;
+    display: flex;
+
+    &:hover,
+    &:focus,
+    &:active {
+      cursor: pointer;
+      color: $dark;
+    }
+  }
+
+  &:not(:last-child) a {
+    svg {
+      stroke: $gold;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      svg {
+        stroke: $dark;
+      }
+    }
+  }
+
+  &:last-child a {
+    svg {
+      fill: $gold;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      svg {
+        fill: $dark;
+      }
+    }
+  }
+}
+
+.page-header__phone-link {
+  color: $gold;
+  display: flex;
+  align-items: center;
+}
+
+.page-header__phone-icon {
+  margin-right: 4px;
+}
+
+.page-header__menu-button {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  width: 20px;
+  height: 8px;
+  border-top: 2px solid $dark;
+  border-bottom: 2px solid $dark;
+  margin-left: auto;
+
+  &:hover,
+  &:focus,
+  &:active {
+    cursor: pointer;
+    border-color: $gold;
+  }
+}
