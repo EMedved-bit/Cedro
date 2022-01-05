@@ -49,3 +49,11 @@
     color: $white;
   }
 }
+
+.logo {
+  &:hover,
+  &:focus,
+  &:active {
+    cursor: pointer;
+  }
+}

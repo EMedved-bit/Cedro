@@ -1,11 +1,22 @@
-.menu__list {
+.menu {
   list-style: none;
   margin: 0;
   padding: 0;
   width: calc(100% / 3);
+
+  &--popup {
+    .menu__title,
+    .menu__link,
+    .menu__text-wrapper{
+      color: rgba($dark, 0.8);
+    }
+    .menu__contacts-icon {
+      fill: $dark;
+    }
+  }
 }
 
-.menu__list-title {
+.menu__title {
   margin-bottom: 24px;
 
   &:hover,
