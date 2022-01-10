@@ -1,5 +1,9 @@
 .header-nav {
-  margin: 0 100px;
+  margin: 0 auto;
+
+  @media (max-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .header-nav__list {

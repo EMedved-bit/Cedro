@@ -11,6 +11,10 @@
   display: flex;
   margin: 0 auto;
   align-items: center;
+
+  @media (max-width: $desktop-width) {
+    padding: 0 16px;
+  }
 }
 
 .page-header__user-menu-list {
@@ -26,11 +30,16 @@
 
   &:first-child {
     margin-right: 32px;
+
+    @media (max-width: $desktop-width) {
+      margin-right: 0;
+    }
   }
 
   a {
     text-decoration: none;
     display: flex;
+    position: relative;
 
     &:hover,
     &:focus,
@@ -79,6 +88,11 @@
   margin-right: 4px;
 }
 
+.page-header__phone-text {
+  @media (max-width: $desktop-width) {
+    display: none;
+  }
+}
 .page-header__menu-button {
   border: none;
   padding: 0;
@@ -96,4 +110,32 @@
     cursor: pointer;
     border-color: $gold;
   }
+
+  @media (max-width: $desktop-width) {
+    margin-left: 22px;
+  }
+}
+
+.page-header__logo {
+  display: flex;
+  align-items: center;
+
+  @media (max-width: $desktop-width) {
+    margin-right: auto;
+  }
+}
+
+.page-header__link-counter {
+  line-height: 14px;
+  padding: 0 2px;
+  height: 14px;
+  background-color: $dark;
+  border-radius: 50%;
+  color: $white;
+  font-size: 8px;
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  min-width: 14px;
+  text-align: center;
 }

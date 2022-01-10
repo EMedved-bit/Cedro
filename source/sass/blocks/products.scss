@@ -1,5 +1,9 @@
 .products {
   padding: 112px 80px;
+
+  @media (max-width: $desktop-width) {
+    padding: 32px 0 64px 16px;
+  }
 }
 
 .products__title-wrapper {
@@ -7,6 +11,10 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 48px;
+
+  @media (max-width: $desktop-width) {
+    margin-bottom: 32px;
+  }
 }
 
 .products__title {
@@ -18,6 +26,11 @@
 
   span {
     color: $gold;
+  }
+
+  @media (max-width: $desktop-width) {
+    font-size: 28px;
+    line-height: 32px;
   }
 }
 
@@ -34,6 +47,19 @@
     background-image: url("../images/icons/arrow_icon.svg");
     display: block;
     margin-left: 8px;
+  }
+
+  @media (max-width: $desktop-width) {
+    display: none;
+  }
+
+  &--mobile {
+    display: none;
+
+    @media (max-width: $desktop-width) {
+      display: flex;
+      margin-top: 32px;
+    }
   }
 }
 
@@ -53,6 +79,10 @@
 
     .products__description {
       padding: 24px 23px 23px 23px;
+
+      @media (max-width: $desktop-width) {
+        padding: 16px 15px 15px 15px;
+      }
     }
 
     .product__image {
@@ -86,6 +116,11 @@
   position: absolute;
   top: 24px;
   left: 24px;
+
+  @media (max-width: $desktop-width) {
+    top: 16px;
+    left: 16px;
+  }
 }
 
 .products__wishlist-button {
@@ -111,12 +146,21 @@
       fill: $gold;
     }
   }
+
+  @media (max-width: $desktop-width) {
+    top: 21px;
+    right: 17px;
+  }
 }
 
 .products__description {
   padding: 24px;
   font-size: 14px;
   line-height: 18px;
+
+  @media (max-width: $desktop-width) {
+    padding: 16px;
+  }
 }
 
 .products__name {

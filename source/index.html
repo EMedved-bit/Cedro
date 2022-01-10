@@ -57,6 +57,7 @@
               <svg class="page-header__wishlist-icon" width="24" height="24">
                 <use xlink:href="images/sprite.svg#wishlist-icon"></use>
               </svg>
+              <span class="page-header__link-counter">99</span>
             </a>
           </li>
           <li class="page-header__item">
@@ -64,6 +65,7 @@
               <svg class="page-header__basket-icon" width="24" height="24">
                 <use xlink:href="images/sprite.svg#basket-icon"></use>
               </svg>
+              <span class="page-header__link-counter">99</span>
             </a>
           </li>
           <li class="page-header__item">
@@ -85,24 +87,43 @@
             <fieldset class="profile-section__user-form-section">
               <h2 class="section-title profile-section__form-title">Данные профиля</h2>
               <label class="profile-section__form-label" for="user-name">ФИО</label>
-              <input class="profile-section__form-input" type="text" name="user-name" id="user-name" placeholder="Введите ФИО">
+              <div class="profile-section__form-input-wrapper">
+                <input class="profile-section__form-input profile-section__form-input--icon" type="text" name="user-name" id="user-name" placeholder="Введите ФИО" required>
+                <svg class="profile-section__input-icon" width="16" height="16">
+                  <use xlink:href="images/sprite.svg#form-user-icon"></use>
+                </svg>
+              </div>
               <label class="profile-section__form-label" for="user-mail">Почта</label>
-              <input class="profile-section__form-input" type="email" name="user-mail" id="user-mail" placeholder="Введите email">
+              <div class="profile-section__form-input-wrapper">
+                <input class="profile-section__form-input" type="email" name="user-mail" id="user-mail" placeholder="Введите email" required>
+              </div>
               <label class="profile-section__form-label" for="user-phone">Телефон</label>
-              <input class="profile-section__form-input" type="tel" name="user-phone" id="user-phone" placeholder="Введите номер телефона">
+              <div class="profile-section__form-input-wrapper">
+                <input class="profile-section__form-input" type="tel" name="user-phone" id="user-phone" placeholder="Введите номер телефона" required>
+              </div>
               <label class="profile-section__form-label" for="user-nickname">Имя аккаунта</label>
-              <input class="profile-section__form-input" type="text" name="user-nickname" id="user-nickname" placeholder="Введите имя аккаунта">
+              <div class="profile-section__form-input-wrapper">
+                <input class="profile-section__form-input" type="text" name="user-nickname" id="user-nickname" placeholder="Введите имя аккаунта" required>
+              </div>
               <label class="profile-section__form-label" for="user-instagram_profile">Профиль в инстаграм</label>
-              <input class="profile-section__form-input" type="text" name="user-instagram_profile" id="user-instagram_profile" placeholder="Профиль в Instagram">
+              <div class="profile-section__form-input-wrapper">
+                <input class="profile-section__form-input" type="text" name="user-instagram_profile" id="user-instagram_profile" placeholder="Профиль в Instagram" required>
+              </div>
               <label class="profile-section__form-label" for="user-address">Адрес доставки</label>
-              <input class="profile-section__form-input" type="text" name="user-address" id="user-address" placeholder="Город, улица, дом">
+              <div class="profile-section__form-input-wrapper">
+                <input class="profile-section__form-input" type="text" name="user-address" id="user-address" placeholder="Город, улица, дом" required>
+              </div>
             </fieldset>
             <fieldset class="profile-section__user-form-section">
               <h2 class="section-title profile-section__form-title">Изменить пароль</h2>
               <label class="profile-section__form-label" for="user-old-password">Старый пароль</label>
-              <input class="profile-section__form-input" type="password" name="user-old-password" id="user-old-password" placeholder="Введите старый пароль">
+              <div class="profile-section__form-input-wrapper">
+                <input class="profile-section__form-input" type="password" name="user-old-password" id="user-old-password" placeholder="Введите старый пароль" required>
+              </div>
               <label class="profile-section__form-label" for="user-new-password">Новый пароль</label>
-              <input class="profile-section__form-input" type="password" name="user-new-password" id="user-new-password" placeholder="Введите новый пароль">
+              <div class="profile-section__form-input-wrapper">
+                <input class="profile-section__form-input" type="password" name="user-new-password" id="user-new-password" placeholder="Введите новый пароль" required>
+              </div>
             </fieldset>
             <div class="profile-section__user-form-button-container">
               <button type="submit" class="main-button profile-section__user-form-button">Сохранить изменения</button>
@@ -262,6 +283,7 @@
             </button>
           </div>
         </div>
+        <a class="products__catalog-link products__catalog-link--mobile" href="#">Перейти в каталог</a>
       </article>
     </main>
     <footer class="page-footer">

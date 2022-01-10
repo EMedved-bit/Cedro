@@ -4,11 +4,22 @@
   border-left: 1px solid $border-grey;
   border-bottom: 1px solid $border-grey;
   flex-grow: 1;
+
+  @media (max-width: $desktop-width) {
+    padding: 32px 0;
+    border: none;
+  }
 }
 
 .profile-section__title {
   padding: 0 0 80px 95px;
   border-bottom: 1px solid $border-grey;
+
+  @media (max-width: $desktop-width) {
+    width: 100%;
+    border: none;
+    padding: 0 16px;
+  }
 }
 
 .profile-section__user-form {
@@ -22,28 +33,54 @@
   border-bottom: 1px solid $border-grey;
   display: flex;
   flex-direction: column;
+
+  @media (max-width: $desktop-width) {
+    padding: 32px 16px;
+    width: 100%;
+  }
 }
 
 .profile-section__form-title {
   margin-bottom: 48px;
+
+  @media (max-width: $desktop-width) {
+    margin-bottom: 32px;
+  }
 }
 
 .profile-section__form-label {
   color: rgba($dark, 0.4);
   margin-bottom: 12px;
+
+  @media (max-width: $desktop-width) {
+    margin-bottom: 8px;
+  }
+}
+
+.profile-section__form-input-wrapper {
+  width: 544px;
+  position: relative;
+
+  @media (max-width: $desktop-width) {
+    width: 100%;
+  }
+
+  &:not(:last-of-type) {
+    margin-bottom: 24px;
+
+    @media (max-width: $desktop-width) {
+      margin-bottom: 16px;
+    }
+  }
 }
 
 .profile-section__form-input {
-  width: 544px;
+  width: 100%;
   padding: 0 16px;
   height: 56px;
   border: none;
   background: $background-grey;
   font: inherit;
-
-  &:not(:last-of-type) {
-    margin-bottom: 24px;
-  }
 
   &::placeholder {
     font: inherit;
@@ -56,9 +93,46 @@
     &::placeholder {
       color: rgba($dark, 0.8);
     }
+
+    & + .profile-section__input-icon {
+      fill: rgba($dark, 0.8);
+    }
   }
+
+  &:focus + .profile-section__input-icon {
+    fill: $dark;
+  }
+
+  &--icon {
+    padding-left: 40px;
+  }
+
+  &:valid {
+    color: $gold;
+
+    & + .profile-section__input-icon {
+      fill: $gold;
+    }
+  }
+}
+
+.profile-section__input-icon {
+  position: absolute;
+  top: 20px;
+  left: 16px;
+  fill: rgba($dark, 0.4);
 }
 
 .profile-section__user-form-button-container {
   padding: 96px 0 0 95px;
+
+  @media (max-width: $desktop-width) {
+    padding: 32px 16px 0;
+  }
+}
+
+.profile-section__user-form-button {
+  @media (max-width: $desktop-width) {
+    width: 100%;
+  }
 }

@@ -1,7 +1,12 @@
 .page-footer {
-  background-color: $dark;
+  background-color: $background-dark;
   margin-top: auto;
   padding: 56px 0 32px;
+
+  @media (max-width: $desktop-width) {
+    padding: 64px 16px;
+    background-color: $background-dark;
+  }
 }
 
 .page-footer__wrapper {
@@ -14,9 +19,19 @@
   &--copyright {
     align-items: center;
   }
+
+  @media (max-width: $desktop-width) {
+    flex-direction: column;
+    padding: 0;
+    align-items: flex-start;
+  }
 }
 
 .page-footer__menu {
   padding-bottom: 56px;
   border-bottom: 1px solid rgba($white, 0.16);
+
+  @media (max-width: $desktop-width) {
+    padding-bottom: 0;
+  }
 }

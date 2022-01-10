@@ -3,6 +3,10 @@
   margin: 0;
   padding: 0;
   display: flex;
+
+  @media (max-width: $desktop-width) {
+    margin-bottom: 16px;
+  }
 }
 
 .socials__item {

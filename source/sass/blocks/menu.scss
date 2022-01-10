@@ -4,6 +4,11 @@
   padding: 0;
   width: calc(100% / 3);
 
+  @media (max-width: $desktop-width) {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
   &--popup {
     .menu__title,
     .menu__link,
@@ -24,10 +29,18 @@
     cursor: pointer;
     color: $gold;
   }
+
+  @media (max-width: $desktop-width) {
+    margin-bottom: 16px;
+  }
 }
 
 .menu__item {
   margin-bottom: 16px;
+
+  @media (max-width: $desktop-width) {
+    margin-bottom: 8px;
+  }
 
   &:last-of-type {
     margin-bottom: 0;

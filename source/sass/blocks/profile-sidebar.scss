@@ -2,6 +2,10 @@
   width: calc(50% - 368px);
   order: 0;
   border-bottom: 1px solid $border-grey;
+
+  @media (max-width: $desktop-width) {
+    width: 100%;
+  }
 }
 
 .profile-sidebar__list {
@@ -10,6 +14,17 @@
   width: 192px;
   margin: 0;
   margin-left: auto;
+
+  @media (max-width: $desktop-l-width) {
+    padding: 112px 16px;
+    width: 100%;
+  }
+
+  @media (max-width: $desktop-width) {
+    padding: 8px 16px;
+    width: 100%;
+    display: flex;
+  }
 }
 
 .profile-sidebar__link {
@@ -30,5 +45,16 @@
 .profile-sidebar__item {
   &:not(:last-child) {
     margin-bottom: 8px;
+  }
+
+  @media (max-width: $desktop-width) {
+    &:not(:last-child) {
+      margin-bottom: 0;
+      margin-right: 16px;
+    }
+
+    &:last-child {
+      margin-left: auto;
+    }
   }
 }
